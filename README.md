@@ -1,3 +1,6 @@
+# For Detailed Step by Step Guide
+You can find detailed step by step guide on creating this project on the Medium post I created [HERE](https://techandapps.com).
+
 # terraform-gcp-vm-scheduler
 
 ## Step-by-Step Guide
