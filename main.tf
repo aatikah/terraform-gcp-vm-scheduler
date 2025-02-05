@@ -1,9 +1,3 @@
-# resource "google_compute_network" "tikah-vpc" {
-#   name                    = "tikah-vpc"
-#   auto_create_subnetworks = true
-
-# }
-
 resource "google_compute_network" "tikah-custom-vpc" {
   name                    = "tikah-custom-vpc"
   auto_create_subnetworks = false
@@ -17,21 +11,11 @@ resource "google_compute_subnetwork" "tikah-custom-subnetwork" {
   network       = google_compute_network.tikah-custom-vpc.id
 
 }
-# resource "google_compute_subnetwork" "tikah-custom-subnetwork2" {
-#   name          = "tikah-custom-subnetwork2"
-#   ip_cidr_range = "10.0.2.0/24"
-#   region        = var.region
-#   network       = google_compute_network.tikah-custom-vpc.id
-
-# }
-
-
 
 resource "google_compute_instance" "tikahvm" {
   name         = var.vm_name
   machine_type = var.machine_type
   zone         = var.zone
-  # allow_stopping_for_update = false
 
   boot_disk {
     initialize_params {
@@ -95,37 +79,6 @@ resource "google_cloudfunctions_function" "startvm-function" {
   ]
 
 }
-
-# output "function_url" {
-#   value = google_cloudfunctions_function.startvm-function.https_trigger_url
-# }
-
-# resource "google_cloudfunctions2_function" "startvm-function-v2" {
-#   name        = "startvm-function-v2"
-#   location    = "northamerica-northeast1"
-#   description = "A function to start tikahvm"
-
-#   build_config {
-#     runtime     = "python39"
-#     entry_point = "start_my_vm" # Set the entry point
-#     environment_variables = {
-#         BUILD_CONFIG_TEST = "build_test"
-#     } 
-#     source {
-#       storage_source {
-#         bucket = google_storage_bucket.function-bucket.name
-#         object = google_storage_bucket_object.start-function-object.name
-#       }
-#     }
-#   }
-
-#   service_config {
-#     max_instance_count = 1
-#     available_memory   = "256M"
-#     timeout_seconds    = 60
-#   }
-
-# }
 
 resource "google_cloudfunctions2_function" "stopvm-function-v2" {
   name        = "stopvm-function-v2"
