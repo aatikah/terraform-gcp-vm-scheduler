@@ -1,5 +1,5 @@
 # For Detailed Step by Step Guide
-You can find detailed step by step guide on creating this project on the Medium post I created [HERE](https://techandapps.com).
+You can find detailed step by step guide on creating this project on the Medium post I created [HERE](https://link.medium.com/vNRrOaJiRQb).
 
 # terraform-gcp-vm-scheduler
 
@@ -53,4 +53,4 @@ You can find detailed step by step guide on creating this project on the Medium 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
