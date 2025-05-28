@@ -54,3 +54,8 @@ You can find detailed step by step guide on creating this project on the Medium 
 ## License
 
 This project is licensed under the MIT License.
+---
+
+**⭐ If you find this project helpful, please give it a star!**
+- Support me- [buymeacoffee.com/aatikah](https://buymeacoffee.com/aatikah)
+- Connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/abdulhakeem-sulaiman/)
