@@ -1,5 +1,5 @@
 # For Detailed Step by Step Guide
-You can find detailed step by step guide on creating this project on the [Medium post I created HERE](https://link.medium.com/vNRrOaJiRQb).
+You can find detailed step by step guide on creating this project on the [Medium post I created HERE](https://blog.devops.dev/deploying-gcp-infrastructure-with-terraform-automating-vm-start-stop-with-cloud-functions-and-2f6e90223010?sk=54b433286a2b03369d0b1bfbeeb6eecb).
 
 # terraform-gcp-vm-scheduler
 
